@@ -62,3 +62,4 @@ __pycache__
 .node-persist
 config.json
 .env.prod
+.env.dev

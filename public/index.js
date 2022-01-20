@@ -280,7 +280,7 @@ async function stopRecording() {
 }
 
 async function startPlayback() {
-  const url = document.getElementById('videoList').value
+  const url = document.getElementById('fileInput').value || document.getElementById('videoList').value
   console.log('starting playback', url)
   _currentPlayback = await _currentRoom.play({ url })
   document.getElementById('startPlayback').style.display = 'none';
