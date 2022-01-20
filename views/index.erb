@@ -29,7 +29,7 @@
       <button type="button" id="stopRecording" onclick="stopRecording()" class="btn btn-danger" style="display: none;">Stop Recording</button>
       <h5>Playback</h5>
       <select id="videoList" class="form-select">
-        <%- @recs.each do |r| %>
+        <% @recs.each do |r| %>
           <option value="<%= r['uri'] %>"><%= "#{r['id']} #{r['duration']}" %></option>
         <% end %>
       </select>
