@@ -6,6 +6,7 @@ require "sinatra/reloader" if development?
 set :bind, '0.0.0.0'
 
 # Utility method to perform HTTP requests against the SW Video API
+
 def api_request(payload, endpoint, method = :post)
   conn = Faraday.new(url: "https://#{ENV['SIGNALWIRE_SPACE']}/api/video/#{endpoint}")
   conn.basic_auth(ENV['SIGNALWIRE_PROJECT_KEY'], ENV['SIGNALWIRE_TOKEN'])
