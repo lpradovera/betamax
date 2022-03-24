@@ -34,7 +34,7 @@
           <option value="<%= r['uri'] %>"><%= "#{r['id']} #{r['duration']}" %></option>
         <% end %>
       </select>
-      <input type="text" id="fileInput" placeholder="Enter URL here">
+      <input type="text" id="fileInput" placeholder="Enter URL here" class="form-control">
       <button type="button" id="startPlayback" onclick="startPlayback()" class="btn btn-success">Start Playback</button>
       <button type="button" id="stopPlayback" onclick="stopPlayback()" class="btn btn-danger" style="display: none;">Stop Playback</button>
     </div>
